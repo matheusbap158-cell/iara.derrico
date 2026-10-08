@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System | Iara Derrico Estética Avançada</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#512C33;--wine-d:#3A1E24;--gold:#B58D38;--gold-d:#8B6A22;--gold-l:#D9BC6C;--gold-grad:linear-gradient(135deg,#8B6A22 0%,#D9BC6C 38%,#B58D38 62%,#7C5C1B 100%);--olive-grad:linear-gradient(145deg,#756B49,#5A5137);--night:#1B1411;--cream:#F7F0E7;--champ:#F3E9DC;--champ-2:#EADCCB;--sand:#DCCBB6;--ink:#2A1E20;--ink-2:#4A3A3D;--wa:#25D366}
+*{box-sizing:border-box}
+body{margin:0;background:var(--champ);color:var(--ink);font-family:'Poppins',sans-serif;font-weight:300;font-size:16.5px;line-height:1.7}
+h1,h2{font-family:'Playfair Display',serif;font-weight:600;color:var(--wine);margin:0}
+.gold{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+header{background:var(--night);color:#fff;padding:64px 24px;border-bottom:1px solid var(--gold)}
+header h1{color:var(--cream);font-size:clamp(36px,6vw,66px);line-height:1.04}
+header p{color:#D3C7BC;max-width:42rem;margin:16px 0 0}
+.wrap{max-width:1000px;margin:0 auto}
+section{padding:56px 24px;border-bottom:1px solid var(--sand)}
+h2{font-size:36px;margin-bottom:20px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.sw div{border:1px solid var(--sand);border-radius:10px;overflow:hidden;background:#fff;font-size:13px}
+.sw i{display:block;height:74px}
+.sw span{display:block;padding:8px 10px;line-height:1.4}
+.sw b{display:block;font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-flex;align-items:center;min-height:54px;padding:10px 30px;border-radius:99px;font-weight:500;letter-spacing:.04em;border:1px solid transparent}
+.b-wa{background:var(--wa);color:#052E16}.b-gold{background:var(--gold-grad);color:#2A1E20}.b-wine{background:var(--wine);color:var(--cream)}.b-line{border-color:var(--wine);color:var(--wine)}
+.logos{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+.logos div{padding:26px 34px;border-radius:12px}
+.logos img{height:150px;width:auto;display:block}
+.logos .l{background:var(--champ-2)}.logos .d{background:var(--night)}.logos .w{background:var(--wine-d)}
+.kick{font-family:'Playfair Display',serif;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:34px;color:var(--wine);line-height:1.05}
+.big{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:60px;line-height:1.1}
+.hd small{display:block;font-weight:500;font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink)}
+.hd .t{font-family:'Playfair Display',serif;font-weight:600;font-size:64px;letter-spacing:.04em;text-transform:uppercase;line-height:1.05}
+.orn{display:flex;align-items:center;gap:14px;max-width:340px;margin:14px 0}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent)}
+.orn i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:700px){.cards{grid-template-columns:1fr}}
+.pc{background:var(--olive-grad);color:#EDE6D2;border-radius:14px;padding:34px 30px;text-align:center}
+.pc .med{width:70px;height:70px;border-radius:50%;border:1.5px solid var(--gold-l);margin:0 auto 14px;box-shadow:0 0 0 6px rgba(217,188,108,.14)}
+.pc small{display:block;font-size:12px;letter-spacing:.3em;text-transform:uppercase;font-weight:500}
+.pc h3{font-family:'Playfair Display',serif;font-size:30px;text-transform:uppercase;letter-spacing:.05em;color:var(--cream);margin:4px 0 12px}
+.bar{background:var(--night);color:var(--cream);font-family:'Playfair Display',serif;font-size:20px;text-align:center;padding:20px;border-radius:8px}
+.disc{width:220px;height:220px;border-radius:50%;background:linear-gradient(160deg,#E3D3C0,#B9A48E);box-shadow:0 0 0 7px var(--champ),0 0 0 8.5px var(--gold),0 0 0 22px rgba(247,240,231,.55),0 0 0 23px rgba(181,141,56,.55);margin:30px}
+.obs{columns:2;column-gap:40px}
+@media (max-width:700px){.obs{columns:1}}
+.obs h3{font-family:'Playfair Display',serif;font-size:22px;color:var(--wine);margin:0 0 6px;break-after:avoid}
+.obs ul{margin:0 0 22px;padding-left:18px}
+code{background:var(--champ-2);padding:2px 6px;font-size:13.5px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Iara Derrico <span class="gold" style="font-style:italic">Estética Avançada</span></h1><p>O que a pasta mostrou e como virou regra: a linguagem das artes dela (dourado metálico, serifa de alto contraste, medalhões, divisor com losango, faixa oliva e barra com lótus) aplicada ao site.</p></div></header>
+
+<section><div class="wrap"><h2>O que a análise do material mostrou</h2>
+<div class="obs">
+<h3>Logo</h3><ul><li>Monograma "ID" com traço de caneta e ondulação</li><li>Nome em sans geométrica espaçada</li><li>Versões em vinho e dourado</li><li>Redesenhada em vetor a partir do print</li></ul>
+<h3>Cores</h3><ul><li>Fundo champanhe com luz suave</li><li>Dourado metálico em degradê</li><li>Vinho profundo</li><li>Oliva acastanhado em degradê</li><li>Preto-quente na barra de rodapé</li></ul>
+<h3>Tipografia</h3><ul><li>Serifa de alto contraste (Playfair)</li><li>Frase em caixa alta + palavra-chave em itálico dourado</li><li>Rótulo sans espaçado sobre nome grande</li><li>Corpo em sans leve (Poppins)</li></ul>
+<h3>Componentes</h3><ul><li>Divisor com losango</li><li>Medalhões com anel dourado</li><li>Lista com círculo-check dourado</li><li>Cartões oliva, barra com lótus</li><li>Retrato em círculo com anel duplo</li><li>Trilhas de luz douradas</li></ul>
+</div></div></section>
+
+<section><div class="wrap"><h2>Logo (vetor)</h2>
+<div class="logos"><div class="l"><img src="assets/logo-vinho.svg" alt="Logo em vinho"></div><div class="d"><img src="assets/logo-dourado.svg" alt="Logo em dourado"></div><div class="w"><img src="assets/logo-creme.svg" alt="Logo em creme"></div></div></div></section>
+
+<section><div class="wrap"><h2>Cores</h2>
+<div class="sw">
+<div><i style="background:#512C33"></i><span><b>wine</b>#512C33<br>marca</span></div>
+<div><i style="background:linear-gradient(135deg,#8B6A22,#D9BC6C 38%,#B58D38 62%,#7C5C1B)"></i><span><b>gold-grad</b>degradê dourado<br>destaques e filetes</span></div>
+<div><i style="background:#B58D38"></i><span><b>gold</b>#B58D38</span></div>
+<div><i style="background:#D9BC6C"></i><span><b>gold-l</b>#D9BC6C<br>sobre escuro</span></div>
+<div><i style="background:linear-gradient(145deg,#756B49,#5A5137)"></i><span><b>olive-grad</b>#756B49 a #5A5137<br>cartões e faixa</span></div>
+<div><i style="background:#1B1411"></i><span><b>night</b>#1B1411<br>faixas e rodapé</span></div>
+<div><i style="background:#F3E9DC"></i><span><b>champ</b>#F3E9DC<br>fundo</span></div>
+<div><i style="background:#F7F0E7"></i><span><b>cream</b>#F7F0E7</span></div>
+<div><i style="background:#25D366"></i><span><b>wa</b>#25D366<br>só botão de WhatsApp</span></div>
+</div></div></section>
+
+<section><div class="wrap"><h2>Tipografia e ornamentos</h2>
+<p class="kick">Invista em você,</p><p class="big gold">revele sua melhor versão!</p>
+<div class="orn"><i></i></div>
+<div class="hd"><small>Portfólio de</small><span class="t gold">Protocolos</span></div></div></section>
+
+<section><div class="wrap"><h2>Cartão de programa e barra</h2>
+<div class="cards"><div class="pc"><div class="med"></div><small>Programa de</small><h3>Contorno Corporal</h3></div><div class="pc"><div class="med"></div><small>Programa</small><h3>Pele Renovada</h3></div></div>
+<p></p><div class="bar">Tecnologia, ciência e acompanhamento</div></div></section>
+
+<section><div class="wrap"><h2>Retrato e botões</h2>
+<div class="disc"></div>
+<div class="btns"><span class="btn b-wa">Agendar minha avaliação</span><span class="btn b-gold">Agendar minha avaliação</span><span class="btn b-wine">Conversar com a Iara</span><span class="btn b-line">Conhecer os protocolos</span></div></div></section>
+
+<section style="border:0"><div class="wrap"><h2>Regras</h2>
+<p>Um CTA por dobra. Sem preço, antes e depois ou promessa de resultado. Toxina botulínica fora do site até a revisão pelas regras de publicidade. Foto de paciente só com autorização. Animações desligadas com <code>prefers-reduced-motion</code>.</p></div></section>
+</body>
+</html>
